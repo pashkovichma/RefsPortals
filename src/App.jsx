@@ -1,7 +1,12 @@
-import { defineConfig } from 'vite'
-import react from '@vitejs/plugin-react'
+import Player from './components/Player.jsx';
 
-// https://vitejs.dev/config/
-export default defineConfig({
-  plugins: [react()],
-})
+function App() {
+  return (
+    <>
+      <Player />
+      <div id="challenges"></div>
+    </>
+  );
+}
+
+export default App;
